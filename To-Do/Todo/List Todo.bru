@@ -1,0 +1,24 @@
+meta {
+  name: List Todo
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://localhost:8080/todo?complete=false
+  body: none
+  auth: none
+}
+
+params:query {
+  complete: false
+  ~title: fazer
+  ~description: opa
+}
+
+body:json {
+  {
+    "title": "teste",
+    "description": "teste"
+  }
+}

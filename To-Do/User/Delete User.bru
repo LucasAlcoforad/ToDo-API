@@ -1,0 +1,23 @@
+meta {
+  name: Delete User
+  type: http
+  seq: 1
+}
+
+delete {
+  url: http://localhost:8080/user/:id
+  body: none
+  auth: none
+}
+
+params:path {
+  id: 	da1aa326-9f1f-4472-8389-8868d225a095
+}
+
+body:json {
+  {
+    "email": "lucasA@gmail.com",
+    "password": "123",
+    "username": ""
+  }
+}

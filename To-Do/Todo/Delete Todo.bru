@@ -1,0 +1,19 @@
+meta {
+  name: Delete Todo
+  type: http
+  seq: 5
+}
+
+delete {
+  url: http://localhost:8080/todo/:id
+  body: none
+  auth: bearer
+}
+
+params:path {
+  id: 1c4ba738-58a9-4965-bdac-cf0a6aaf62d9
+}
+
+auth:bearer {
+  token: eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJUby1EbyBBcHAiLCJzdWIiOiIwMWIyODdiNC1jZmQ2LTQ5NWUtYTQ5ZS1lYjExY2JlYzM1YTEiLCJleHAiOjE3NDMwMTY4NTUsImlhdCI6MTc0MzAxNjU1NX0.ViZ7P0IOMaaHnzOqQ3enTuSWR2eyOAbog3h6-WIx4vmJbopi1wzRpktEzelIaYaazrE-uoi33qhyrC5bA8S5AXYAhuaW5rEt4vaDobn04VNcIGeWVAGLv788GZbAjhLCu5pzZ7yUk1uhzPjLEB0jrni4nP4yuvYZmd4VF21EVAsp6CuUtxViWgnTHV1Uny57-4lSL9PY-bMA0vYqhGtH8HXp4ivfLdq2SeiSMB420ge3U4VmXsN26cpXNjOLHHlLUjruSeNhyfjdvp0YchjVwWG8SuDXL6I1FYKL25chdy8iaFr_OMqgPhX4VoNmJEBMw8ycsZ9Ld7_UtW4sy49oLA
+}

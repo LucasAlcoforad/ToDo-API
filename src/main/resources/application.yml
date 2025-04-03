@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: TO-DO
+  jpa:
+    properties:
+      hibernate.dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: ${DATASOURCE_URL:jdbc:mysql://localhost:3306/tododb}
+    username: ${DATASOURCE_USERNAME:admin}
+    password: ${DATASOURCE_PASSWORD:admin}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+jwt:
+  public:
+    key: classpath:app.pub
+  private:
+    key: classpath:app.key
+
+springdoc:
+  override-with-generic-response: false

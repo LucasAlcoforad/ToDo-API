@@ -1,0 +1,23 @@
+meta {
+  name: Put User
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:8080/user/:id
+  body: json
+  auth: none
+}
+
+params:path {
+  id: d1a2d6dd-e526-4b01-98b4-5f5ea9faf3fb
+}
+
+body:json {
+  {
+    "email": "",
+    "password": "Lucas@123",
+    "username": ""
+  }
+}

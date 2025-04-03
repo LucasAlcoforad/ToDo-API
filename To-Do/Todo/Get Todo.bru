@@ -1,0 +1,22 @@
+meta {
+  name: Get Todo
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:8080/todo/:id
+  body: none
+  auth: none
+}
+
+params:path {
+  id: 49ef6223-0b55-486c-b899-a26c59d6b4be
+}
+
+body:json {
+  {
+    "title": "teste",
+    "description": "teste"
+  }
+}

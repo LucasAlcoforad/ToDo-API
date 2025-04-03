@@ -1,0 +1,23 @@
+meta {
+  name: Update Todo
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:8080/todo/:id
+  body: json
+  auth: none
+}
+
+params:path {
+  id: 49ef6223-0b55-486c-b899-a26c59d6b4be
+}
+
+body:json {
+  {
+    "title": "update",
+    "description": "update",
+    "complete": true
+  }
+}
